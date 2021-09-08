@@ -24,7 +24,18 @@
     }
     nav6{
         justify-self: end;
-
+        
+    }
+    #sign {
+        box-sizing: border-box;
+        font-weight: bold;
+        color:white;
+        border-color: #4285f4;
+        background-color: #4285f4;
+        border-radius: 0px;
+        border-style: none;
+        width: 90px;
+        height: 30px;
     }
     .bod {
         width: 100;
@@ -35,6 +46,7 @@
         margin-top: 50px;
         }
     .enter {
+        border-style: groove;
         position:relative;
         width: 650px;
         height: 30px;
@@ -42,16 +54,23 @@
         border-radius: 30px;
     }
     .go {
+        border-style: hidden;
+        background-color: #f5f5f0;
         position:relative;
         margin-left: 35%;
         top: 10px;
-        width: 200px;
-    }
+        width: 200px; 
+        height: 30px;
+       }
     .lucky {
+        border-style:hidden;
+        background-color: #f5f5f0;
+        outline: black;
         position:relative;
         margin-left: 52%;
-        bottom: 15px;
+        bottom: 20px;
         width: 200px;
+        height: 30px;
     }   
     .botnav {
         position:relative;
@@ -95,7 +114,7 @@
             <div class="nav3"><a href="#">Gmail</a></div>
             <div class="nav4"><a href="#">Images</a></div>
             <div class="nav5"><a href="#">dash</a></div>
-            <div class="nav6"><button type="button">Sign in</div>
+            <div class="nav6"><button id="sign" type="button">Sign in</div>
         </div>
         <div>
             <div class="logo"><img src="images/googlelogo_color_272x92dp.png" alt="Google logo"></div>

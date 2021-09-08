@@ -36,29 +36,80 @@
         }
     .enter {
         position:relative;
-        width: 400px;
+        width: 650px;
         height: 30px;
-        margin-left: 36%;
+        margin-left: 26%;
         border-radius: 30px;
     }
+    .go {
+        position:relative;
+        margin-left: 35%;
+        top: 10px;
+        width: 200px;
+    }
+    .lucky {
+        position:relative;
+        margin-left: 52%;
+        bottom: 15px;
+        width: 200px;
+    }   
+    .botnav {
+        position:relative;
+        margin-top: 25%;
+        height: 25px;
+        display: grid;
+        grid-template-columns: 1.3fr 1.3fr 3fr 7fr 1fr 1fr 1fr;
+        grid-template-areas: 'a b c d e f gr';
+        background-color: #f5f5f0;
+        font-family: sans-serif;
+        font-size: small;
+    }
+    .bot1 {
+        grid-area: a;
+    }
+    .bot2 {
+        grid-area: b;
+    }
+    .bot3 {
+        grid-area: c;
+    }
+    .bot4 {
+        grid-area: e;
+    }
+    .bot5 {
+        grid-area: f;
+    }
+    .bot6 {
+        grid-area: gr;
+    }
+
 </style>
 <html>
+    <head>
+        <title>Google</title>
+    </head>
     <body class="bod">
         <div class="navbar">
             <div class="nav1"><a href="#">About</a></div>
             <div class="nav2"><a href="#">Store</a></div>
             <div class="nav3"><a href="#">Gmail</a></div>
             <div class="nav4"><a href="#">Images</a></div>
-            <div class="nav5"><a href="#">img</a></div>
+            <div class="nav5"><a href="#">dash</a></div>
             <div class="nav6"><button type="button">Sign in</div>
         </div>
         <div>
-            <div class="logo" >
-                <img src="images/googlelogo_color_272x92dp.png" alt="Google logo">
-            </div>
-            <div>
-                <input type="text" for="search" class="enter"/>
-            </div>
+            <div class="logo"><img src="images/googlelogo_color_272x92dp.png" alt="Google logo"></div>
+            <div><input type="text" for="search" class="enter"/></div>
+            <div><button for="go" class="go" type="button">Google Search</div>
+            <div><button for="lucky" class="lucky" type="button">I'm feeling lucky</div>
+        </div>
+        <div class="botnav">
+            <div class="bot1"><a href="#">Advertising</a></div>
+            <div class="bot2"><a href="#">Business</a></div>
+            <div class="bot3"><a href="#">How Search works</a></div>
+            <div class="bot4"><a href="#">Privacy</a></div>
+            <div class="bot5"><a href="#">Terms</a></div>
+            <div class="bot6"><a href="#">Settings</a></div>
         </div>
     </body>
 </html>
